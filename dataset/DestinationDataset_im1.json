@@ -1,0 +1,11 @@
+{
+	"name": "DestinationDataset_im1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "OddsScrapperSQL",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable"
+	}
+}
