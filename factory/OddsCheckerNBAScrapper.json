@@ -1,0 +1,9 @@
+{
+	"name": "OddsCheckerNBAScrapper",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "b401f53f-6277-4b02-9df6-c11eff1af0d7",
+		"tenantId": "a42c4f48-aa95-4bcf-a7fc-7cb4adc93dda"
+	}
+}
