@@ -25,16 +25,7 @@
 				],
 				"typeProperties": {
 					"source": {
-						"type": "WebSource",
-						"additionalColumns": [
-							{
-								"name": "nowdatetime",
-								"value": {
-									"value": "@utcnow()",
-									"type": "Expression"
-								}
-							}
-						]
+						"type": "WebSource"
 					},
 					"sink": {
 						"type": "AzureSqlSink",
