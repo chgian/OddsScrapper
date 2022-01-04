@@ -46,7 +46,7 @@
 			}
 		],
 		"typeProperties": {
-			"tableName": "[dbo].[OddsChecker_NBA_2]"
+			"tableName": "[dbo].[OddsChecker_NBA]"
 		}
 	}
 }
