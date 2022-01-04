@@ -25,7 +25,16 @@
 				],
 				"typeProperties": {
 					"source": {
-						"type": "WebSource"
+						"type": "WebSource",
+						"additionalColumns": [
+							{
+								"name": "nowdatetime",
+								"value": {
+									"value": "@utcnow()",
+									"type": "Expression"
+								}
+							}
+						]
 					},
 					"sink": {
 						"type": "AzureSqlSink",
@@ -60,6 +69,11 @@
 								},
 								"sink": {
 									"name": "odds_2"
+								}
+							},
+							{
+								"sink": {
+									"name": "timestamp"
 								}
 							}
 						]
