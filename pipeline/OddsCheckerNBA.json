@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Copy_im1",
+				"name": "Odds2SQL",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
@@ -32,7 +32,39 @@
 						"tableOption": "autoCreate",
 						"disableMetricsCollection": false
 					},
-					"enableStaging": false
+					"enableStaging": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"name": "Column2",
+									"type": "String"
+								},
+								"sink": {
+									"name": "teams"
+								}
+							},
+							{
+								"source": {
+									"name": "Column6",
+									"type": "String"
+								},
+								"sink": {
+									"name": "odds_1"
+								}
+							},
+							{
+								"source": {
+									"name": "Column7",
+									"type": "String"
+								},
+								"sink": {
+									"name": "odds_2"
+								}
+							}
+						]
+					}
 				},
 				"inputs": [
 					{

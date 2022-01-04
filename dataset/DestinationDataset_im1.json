@@ -7,6 +7,44 @@
 		},
 		"annotations": [],
 		"type": "AzureSqlTable",
+		"structure": [
+			{
+				"name": "Id",
+				"type": "Int32"
+			},
+			{
+				"name": "timestamp",
+				"type": "DateTime"
+			},
+			{
+				"name": "teams",
+				"type": "String"
+			},
+			{
+				"name": "odds_1",
+				"type": "String"
+			},
+			{
+				"name": "odds_1_1",
+				"type": "Int32"
+			},
+			{
+				"name": "odds_1_2",
+				"type": "String"
+			},
+			{
+				"name": "odds_2",
+				"type": "String"
+			},
+			{
+				"name": "odds_2_1",
+				"type": "Int32"
+			},
+			{
+				"name": "odds_2_2",
+				"type": "Int32"
+			}
+		],
 		"typeProperties": {
 			"tableName": "[dbo].[OddsChecker_NBA]"
 		}
