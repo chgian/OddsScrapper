@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Odds2SQL",
+				"name": "Copy data1",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
@@ -13,23 +13,13 @@
 					"secureOutput": false,
 					"secureInput": false
 				},
-				"userProperties": [
-					{
-						"name": "Source",
-						"value": "/1"
-					},
-					{
-						"name": "Destination",
-						"value": "."
-					}
-				],
+				"userProperties": [],
 				"typeProperties": {
 					"source": {
 						"type": "WebSource"
 					},
 					"sink": {
-						"type": "AzureSqlSink",
-						"disableMetricsCollection": false
+						"type": "AzureSqlSink"
 					},
 					"enableStaging": false,
 					"translator": {
@@ -37,7 +27,25 @@
 						"mappings": [
 							{
 								"source": {
+									"name": "Column1",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Id"
+								}
+							},
+							{
+								"source": {
 									"name": "Column2",
+									"type": "String"
+								},
+								"sink": {
+									"name": "timestamp"
+								}
+							},
+							{
+								"source": {
+									"name": "Column3",
 									"type": "String"
 								},
 								"sink": {
@@ -46,11 +54,29 @@
 							},
 							{
 								"source": {
-									"name": "Column6",
+									"name": "Column4",
 									"type": "String"
 								},
 								"sink": {
 									"name": "odds_1"
+								}
+							},
+							{
+								"source": {
+									"name": "Column5",
+									"type": "String"
+								},
+								"sink": {
+									"name": "odds_1_1"
+								}
+							},
+							{
+								"source": {
+									"name": "Column6",
+									"type": "String"
+								},
+								"sink": {
+									"name": "odds_1_2"
 								}
 							},
 							{
@@ -60,6 +86,20 @@
 								},
 								"sink": {
 									"name": "odds_2"
+								}
+							},
+							{
+								"source": {
+									"name": "Column8",
+									"type": "String"
+								},
+								"sink": {
+									"name": "odds_2_1"
+								}
+							},
+							{
+								"sink": {
+									"name": "odds_2_2"
 								}
 							}
 						]
