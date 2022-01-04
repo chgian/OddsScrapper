@@ -46,15 +46,6 @@
 						"mappings": [
 							{
 								"source": {
-									"name": "nowdatetime",
-									"type": "String"
-								},
-								"sink": {
-									"name": "timestamp"
-								}
-							},
-							{
-								"source": {
 									"name": "Column2",
 									"type": "String"
 								},
