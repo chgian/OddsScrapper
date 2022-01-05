@@ -1,0 +1,65 @@
+{
+	"name": "DestinationDataset_n4m",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "OddsScrapperSQL",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "Otimestamp",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "Oteams",
+				"type": "nchar",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "Oodds_1",
+				"type": "nchar",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "Oodds_1_1",
+				"type": "int",
+				"precision": 10,
+				"scale": 0
+			},
+			{
+				"name": "Oodds_1_2",
+				"type": "nchar",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "Oodds_2",
+				"type": "nchar",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "Oodds_2_1",
+				"type": "int",
+				"precision": 10,
+				"scale": 0
+			},
+			{
+				"name": "Oodds_2_2",
+				"type": "int",
+				"precision": 10,
+				"scale": 0
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "OddsChecker_NBA_4"
+		}
+	}
+}
