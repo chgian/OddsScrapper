@@ -14,10 +14,6 @@
 		"OddsCheckerNBA_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://www.oddschecker.com/basketball/nba"
-		},
-		"PancakePrediction_properties_typeProperties_url": {
-			"type": "string",
-			"defaultValue": "https://pancakeswap.finance/prediction"
 		}
 	},
 	"variables": {
@@ -331,26 +327,6 @@
 				"type": "AzureSqlDatabase",
 				"typeProperties": {
 					"connectionString": "[parameters('OddsScrapperSQL_connectionString')]"
-				},
-				"connectVia": {
-					"referenceName": "integrationRuntime1",
-					"type": "IntegrationRuntimeReference"
-				}
-			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/integrationRuntimes/integrationRuntime1')]"
-			]
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/PancakePrediction')]",
-			"type": "Microsoft.DataFactory/factories/linkedServices",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"annotations": [],
-				"type": "Web",
-				"typeProperties": {
-					"url": "[parameters('PancakePrediction_properties_typeProperties_url')]",
-					"authenticationType": "Anonymous"
 				},
 				"connectVia": {
 					"referenceName": "integrationRuntime1",
