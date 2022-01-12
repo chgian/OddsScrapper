@@ -10,6 +10,9 @@
 		},
 		"OddsCheckerNBA_properties_typeProperties_url": {
 			"value": "https://www.oddschecker.com/basketball/nba"
+		},
+		"PancakePrediction_properties_typeProperties_url": {
+			"value": "https://pancakeswap.finance/prediction"
 		}
 	}
 }
