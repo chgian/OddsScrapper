@@ -145,6 +145,7 @@
 			},
 			{
 				"name": "Send Email",
+				"description": "",
 				"type": "WebActivity",
 				"dependsOn": [
 					{
